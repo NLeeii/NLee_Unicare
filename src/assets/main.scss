@@ -1,0 +1,33 @@
+/* src/assets/main.scss */
+
+// === 變數定義 (之後團隊如果要改名，改這裡就好) ===
+$primary: #4DB6AC;       // 湖水綠
+$primary-dark: #2A9D8F;  // 深湖水綠
+$primary-bg: #E0F2F1;    // 淺綠背景
+
+$orange: #FF8A65;        // 暖橘 (警示/重點)
+$orange-bg: #FFF3E0;
+
+$text-main: #333333;     // 主要文字
+$text-sub: #666666;      // 次要文字
+$border: #CCCCCC;        // 邊框灰
+$bg-body: #F5F7F9;       // 網頁背景色
+
+// === 全域設定 ===
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: $bg-body;
+  color: $text-main;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 讓所有元素都用 border-box，排版才不會跑 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
