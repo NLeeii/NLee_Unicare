@@ -6,32 +6,22 @@ import TheSidebar from '../components/TheSidebar.vue'
 </script>
 
 <template>
-  <TheSidebar/>
-  <div class="test-area">
+  <div class="mall_page">
+    <TheSidebar/>
+  <div class="test_area">
     <ProductCard 
     :image="fishOilImg" title="頂級深海rTG魚油" spec="60錠/瓶" :price="1280" tag="熱銷"/>
 
   </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.mall-page {
-  padding: 20px;
-
-  h1 {
-    color: $primaryDark;
-    font-size: 30px;
-  }
-
-  .test-btn {
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
+.mall_page {
+background-color: $bgBody;
 }
 
-.test-area {
+.test_area {
   padding: 50px;
   margin-bottom: 100px;
   width: 400px; /* 先限制一個寬度，模擬它在網格裡的樣子 */
