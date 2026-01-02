@@ -2,17 +2,12 @@
 import { ref } from 'vue'
 import ProductCard from '../components/ProductCard.vue'
 import fishOilImg from '@/assets/images/08.jpg' // 測試用
+import TheSidebar from '../components/TheSidebar.vue'
 </script>
 
 <template>
-  <div class="mall-page">
-    <h1>UniCare 樂活商城</h1>
-    <p>這裡是商城</p>
-    <button class="test-btn">測試按鈕</button>
-  </div>
+  <TheSidebar/>
   <div class="test-area">
-    <h3>商品卡片</h3>
-
     <ProductCard 
     :image="fishOilImg" title="頂級深海rTG魚油" spec="60錠/瓶" :price="1280" tag="熱銷"/>
 
@@ -24,12 +19,11 @@ import fishOilImg from '@/assets/images/08.jpg' // 測試用
   padding: 20px;
 
   h1 {
-    // color: $primary-dark;
+    color: $primaryDark;
     font-size: 30px;
   }
 
   .test-btn {
-    // background-color: $orange;
     color: white;
     border: none;
     padding: 10px 20px;

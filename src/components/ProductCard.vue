@@ -45,6 +45,7 @@ const addToCart = () => {
 
   &:hover {
     transform: translateY(-5px);
+    box-shadow: $shadowDark;
   }
 
   .card_img {
